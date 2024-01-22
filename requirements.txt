@@ -6,3 +6,4 @@ plotly
 inflection
 scikit-learn
 scikit-plot
+Flask
