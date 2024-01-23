@@ -69,5 +69,6 @@ class HealthInsurance:
         # join prediction into original data
         #original_data['prediction'] = pred
         original_data['response'] = pred[:, 0].tolist()
+        original_data['score'] = pred[:, 1].tolist()  
         
         return original_data.to_json( orient='records', date_format='iso' )
