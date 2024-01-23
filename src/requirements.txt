@@ -1,0 +1,9 @@
+pandas
+numpy
+seaborn
+matplotlib
+plotly
+inflection
+scikit-learn
+scikit-plot
+Flask
