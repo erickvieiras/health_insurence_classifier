@@ -5,7 +5,7 @@ from healthinsurance.HealthInsurance import HealthInsurance
 
 
 # loading model
-model = pickle.load(open('model/logistc_regression.pkl', 'rb'))
+model = pickle.load(open('../model/logistc_regression.pkl', 'rb'))
 
 
 # initialize API

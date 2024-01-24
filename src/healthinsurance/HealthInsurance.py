@@ -5,12 +5,12 @@ import pandas as pd
 class HealthInsurance:
     
     def __init__( self ):
-        self.annual_premium_scaler =            pickle.load( open('feature/annual_premium_scaler.pkl', 'rb' ) )
-        self.age_scaler =                       pickle.load( open('feature/age_scaler.pkl', 'rb' ) ) 
-        self.vintage_scaler =                   pickle.load( open('feature/vintage_scaler.pkl', 'rb' ) ) 
-        self.target_encode_gender_scaler =      pickle.load( open('feature/target_encode_gender_scaler.pkl', 'rb' ) )
-        self.target_encode_region_code_scaler = pickle.load( open('feature/target_encode_region_code_scaler.pkl', 'rb' ) )
-        self.fe_policy_sales_channel_scaler =   pickle.load( open('feature/fe_policy_sales_channel_scaler.pkl', 'rb' ) )
+        self.annual_premium_scaler =            pickle.load( open('../feature/annual_premium_scaler.pkl', 'rb' ) )
+        self.age_scaler =                       pickle.load( open('../feature/age_scaler.pkl', 'rb' ) ) 
+        self.vintage_scaler =                   pickle.load( open('../feature/vintage_scaler.pkl', 'rb' ) ) 
+        self.target_encode_gender_scaler =      pickle.load( open('../feature/target_encode_gender_scaler.pkl', 'rb' ) )
+        self.target_encode_region_code_scaler = pickle.load( open('../feature/target_encode_region_code_scaler.pkl', 'rb' ) )
+        self.fe_policy_sales_channel_scaler =   pickle.load( open('../feature/fe_policy_sales_channel_scaler.pkl', 'rb' ) )
         
     def data_cleaning( self, data ):
         # 1.1. Rename Columns
