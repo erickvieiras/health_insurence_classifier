@@ -35,6 +35,12 @@ class HealthInsurance:
     
     
     def data_preparation( self, data ):
+
+        data['region_code'] = data['region_code'].astype( np.int64 )
+        data['policy_sales_channel'] = data['policy_sales_channel'].astype( np.int64 )
+        data['annual_premium'] = data['annual_premium'].astype( np.float64 )
+    
+
         # anual premium - StandarScaler
         data['annual_premium'] = self.annual_premium_scaler.transform( data[['annual_premium']].values )
 
